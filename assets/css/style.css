@@ -113,8 +113,8 @@
 .copyright-container {
     opacity: 0.7;
 }
-h3 {
+.copyright-container h3 {
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 10px;
+    font-size: 14px;
+    font-weight: 700;
 }
