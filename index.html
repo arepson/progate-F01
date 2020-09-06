@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0' name='viewport'/>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>proyek-progate</title>
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='assets/img/favicon.svg' rel='icon' type='image/x-icon'/>
+    <title>Jasa Buat Website Murah</title>
 </head>
+
 <body>
-    <header>
-        <!--bagian header silahkan dikerjakan di blok ini-->
+    <!--bagian header silahkan dikerjakan di blok ini-->
+    <header class="navbar">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="#">
+                    <img class="landing-header__logo" src="assets/img/buset.svg">
+                </a>
+            </div>
+
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="navbar-dropdown">
+                        <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                            Services <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown" id="my-dropdown-id">
+                            <li class="separator"></li>
+                            <li><a href="#">Merkurius</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Mars</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Venus</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Earth</a></li>
+                            <li class="separator"></li>
+                        </ul>
+                    </li>
+                    <li class="navbar-dropdown">
+                        <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                            Blog <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown" id="blog">
+                            <li class="separator"></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Release Updated</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Tutorial</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Info</a></li>
+                            <li class="separator"></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <div class="jumbotron">
@@ -22,5 +81,9 @@
     <footer>
         <!--bagian footer silahkan dikerjakan di blok ini-->
     </footer>
+
+    <!-- script -->
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
