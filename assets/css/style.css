@@ -44,7 +44,7 @@
 }
 
 .footer-container {
-    background-color: aquamarine;   
+    background-color: #00ab4e;   
     width: 100%;
 }
 .footer-content-container {
@@ -66,7 +66,7 @@
 }
 .icon-container img:hover {
     cursor: pointer;
-    background-color: #db18a1;
+    background-color: #fff;
     transition: 0.3s;
     border-radius: 20px;
 }
