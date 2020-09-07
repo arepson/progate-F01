@@ -104,24 +104,6 @@
         border-bottom: 1px solid #eee;
    }
 }
-.navbar .navbar-menu .navbar-nav > li.active a {
-    color: #00ab4e;
-}
-.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
-    list-style: none;
-    position: absolute;
-    top: 150%;
-    left: 0;
-    background-color: #fff;
-    padding: 0.5rem 0;
-    min-width: 160px;
-    width: auto;
-    white-space: nowrap;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    z-index: 99999;
-    border-radius: 0.75rem;
-    display: none;
-}
 @media (max-width: 768px) {
     .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
         position: relative;
