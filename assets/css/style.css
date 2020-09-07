@@ -1,139 +1,281 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
 
- * {
-	 box-sizing: border-box;
-	 padding: 0;
-	 margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
- body {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 0.925rem;
-    font-weight: 400;
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.925rem;
+  font-weight: 400;
 }
- a {
-	 text-decoration: none;
+
+a {
+  text-decoration: none;
 }
- .container {
-	 width: 1170px;
-	 position: relative;
-	 margin-left: auto;
-	 margin-right: auto;
-	 padding-left: 15px;
-	 padding-right: 15px;
+
+.container {
+  max-width: 1170px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+
 .navbar {
-    padding: 1.15rem 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.035);
-    background-color: #fff;
-	z-index: 10;
+  padding: 1.15rem 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.035);
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
- .navbar, .navbar .container {
-	 width: 100%;
-	 display: flex;
-	 flex-wrap: wrap;
-	 align-items: center;
-	 justify-content: space-between;
+
+.navbar, .navbar .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-.header-logo {
-    width: 115px;
+
+.navbar .navbar-header svg {
+  width: 115px;
 }
-.header-logo:hover {
-    filter: grayscale(100%) brightness(1.3);
-    transition: 0.3s;
+
+.navbar .navbar-header svg:hover {
+  filter: grayscale(100%) brightness(1.3);
+  transition: 0.3s;
 }
+
 .navbar .navbar-menu .navbar-nav > li.active a {
-    color: #00ab4e;
+  color: #00ab4e;
 }
+
 .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
-    list-style: none;
-    position: absolute;
-    top: 150%;
-    left: 0;
-    background-color: #fff;
-    padding: 0.5rem 0;
-    min-width: 160px;
-    width: auto;
-    white-space: nowrap;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    z-index: 99999;
-    border-radius: 0.75rem;
-    display: none;
+  list-style: none;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  background-color: #fff;
+  padding: 0.5rem 0;
+  min-width: 160px;
+  width: auto;
+  white-space: nowrap;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  z-index: 99999;
+  border-radius: 0.75rem;
+  display: none;
 }
+
 .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a:hover {
-    color: #00ab4e;
-    transition: 0.3s ;
+  color: #00ab4e;
+  transition: 0.3s;
 }
+
+.top-wrapper {
+  padding: 250px 0 100px 0;
+  background-image: url(/assets/img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.95;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.9;
+  margin-bottom: 3px;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.9;
+  border-radius: 4px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.contact {
+  background-color: #239b76;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.lesson-wrapper {
+  padding-bottom: 330px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon h3 {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
 .footer-container {
-    background-color: #00ab4e;
-    width: 100%;
+  background-color: #00ab4e;
+  width: 100%;
 }
+
 .footer-content-container {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
 }
+
 .icon-container {
-    padding: 5px;
+  padding: 5px;
 }
-.icon-container img {
-    height: 40px;
-    margin: 0 5px;
-    padding: 5px;
-    width: 40px;
-    transition: 0.3s;
+
+.icon-container svg {
+  height: 40px;
+  margin: 0 5px;
+  padding: 5px;
+  width: 40px;
+  transition: 0.3s;
 }
-.icon-container img:hover {
-    cursor: pointer;
-    filter: grayscale(90%) brightness(1.3);
-    transition: 0.3s;
-    border-radius: 20px;
+
+.icon-container svg:hover {
+  cursor: pointer;
+  filter: grayscale(90%) brightness(1.3);
+  transition: 0.3s;
+  border-radius: 20px;
 }
+
 .information-container {
-    display: flex;
-    transition: 0.3s;
-    flex-direction: row;
+  display: flex;
+  transition: 0.3s;
+  flex-direction: row;
 }
+
 .information-container h3:hover {
-    transition: 0.3s;
-    cursor: pointer;
-    opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+  opacity: 0.5;
 }
+
 .information-container span {
-    color: #fff;
-    margin: 0 5px;
+  color: #fff;
+  font-size: 12.5px;
+  margin: 0 5px;
 }
+
 .policy-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
+
 .terms {
-    transition: 0.3s ;
+  transition: 0.3s;
 }
+
 .terms:hover {
-    cursor: pointer;
-    transition: 0.3s ;
-    opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.5;
 }
+
 .policy-container span {
-    color: #fff;
+  font-size: 12.5px;
+  color: #fff;
 }
+
 .policy {
-    transition: 0.3s;
+  transition: 0.3s;
 }
+
 .policy:hover {
-    cursor: pointer;
-    transition: 0.3s ;
-    opacity: 0.6;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.6;
 }
+
 .policy-container span {
-    margin: 0 5px;
+  margin: 0 5px;
 }
+
 .copyright-container {
-    opacity: 0.7;
+  opacity: 0.7;
 }
+
 .footer-content-container h3 {
-    font-size: 12.5px;
-    font-weight: 400;
-    color: #fff;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: #fff;
 }

@@ -1,148 +1,237 @@
 @media (max-width: 768px) {
-    .navbar, .navbar .container {
-        display: block;
-   }
-}
-@media (min-width: 576px) {
+    .navbar,
+      .navbar .container {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 576px) {
     .navbar .container {
-        max-width: 540px;
-   }
-}
-@media (min-width: 768px) {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
     .navbar .container {
-        max-width: 720px;
-   }
-}
-@media (min-width: 992px) {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
     .navbar .container {
-        max-width: 960px;
-   }
-}
-@media (min-width: 1200px) {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
     .navbar .container {
-        max-width: 1140px;
-   }
-}
-.navbar .navbar-header {
+      max-width: 1140px;
+    }
+  }
+  
+  .navbar .navbar-header {
     display: flex;
     align-items: center;
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .navbar .navbar-header {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-   }
-}
-.navbar .navbar-header .navbar-toggler {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  }
+  
+  .navbar .navbar-header .navbar-toggler {
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
     border: none;
     display: none;
     outline: none;
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .navbar .navbar-header .navbar-toggler {
-        display: block;
-   }
-}
-.navbar .navbar-header .navbar-toggler span {
+      display: block;
+    }
+  }
+  
+  .navbar .navbar-header .navbar-toggler span {
     height: 2px;
     width: 22px;
     background-color: #929aad;
     display: block;
-}
-.navbar .navbar-header .navbar-toggler span:not(:last-child) {
+  }
+  
+  .navbar .navbar-header .navbar-toggler span:not(:last-child) {
     margin-bottom: 0.2rem;
-}
-.navbar .navbar-header > a {
+  }
+  
+  .navbar .navbar-header>a {
     font-weight: 500;
     color: #3c4250;
-}
-.navbar .navbar-menu {
+  }
+  
+  .navbar .navbar-menu {
     display: flex;
     flex-basis: auto;
     flex-grow: 1;
     align-items: center;
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .navbar .navbar-menu {
-        display: none;
-        text-align: center;
-   }
-}
-.navbar .navbar-menu .navbar-nav {
+      display: none;
+      text-align: center;
+    }
+  }
+  
+  .navbar .navbar-menu .navbar-nav {
     margin-left: auto;
     flex-direction: row;
     display: flex;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .navbar .navbar-menu .navbar-nav {
-        width: 100%;
-        display: block;
-        border-top: 1px solid #eee;
-        margin-top: 1rem;
-   }
-}
-.navbar .navbar-menu .navbar-nav > li > a {
+      width: 100%;
+      display: block;
+      border-top: 1px solid #eee;
+      margin-top: 1rem;
+    }
+  }
+  
+  .navbar .navbar-menu .navbar-nav>li>a {
     color: #3c4250;
     text-decoration: none;
     display: inline-block;
     padding: 0.5rem 1rem;
-}
-.navbar .navbar-menu .navbar-nav > li > a:hover {
+  }
+  
+  .navbar .navbar-menu .navbar-nav>li>a:hover {
     color: #00ab4e;
-}
-@media (max-width: 768px) {
-    .navbar .navbar-menu .navbar-nav > li > a {
-        border-bottom: 1px solid #eee;
-   }
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
+    .navbar .navbar-menu .navbar-nav>li>a {
+      border-bottom: 1px solid #eee;
+    }
+  }
+  
+  @media (max-width: 768px) {
     .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown {
-        position: relative;
-        box-shadow: none;
-   }
-}
-.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a {
+      position: relative;
+      box-shadow: none;
+    }
+  }
+  
+  .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown li a {
     color: #3c4250;
     padding: 0.25rem 1rem;
     display: block;
-}
-.navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown.show {
+  }
+  
+  .navbar .navbar-menu .navbar-nav .navbar-dropdown .dropdown.show {
     display: block !important;
-}
-.navbar .navbar-menu .navbar-nav .dropdown > .separator {
+  }
+  
+  .navbar .navbar-menu .navbar-nav .dropdown>.separator {
     height: 1px;
     width: 100%;
     margin: 9px 0;
     background-color: #eee;
-}
-.navbar .navbar-dropdown {
+  }
+  
+  .navbar .navbar-dropdown {
     position: relative;
-}
-.navbar .navbar-header > a span {
+  }
+  
+  .navbar .navbar-header>a span {
     color: #00ab4e;
-}
-.navbar .navbar-header > a span:hover {
+  }
+  
+  .navbar .navbar-header>a span:hover {
     color: #3c4250;
-}
-.navbar .navbar-header h4 {
+  }
+  
+  .navbar .navbar-header h4 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
-}
-.navbar .navbar-header h4:hover {
+  }
+  
+  .navbar .navbar-header h4:hover {
     color: #00ab4e;
-}
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .navbar .navbar-header h4 {
-        font-size: 1.05rem;
-   }
-}
+      font-size: 1.05rem;
+    }
+  }
+  /* Untuk Tablet */
+  @media all and (max-width: 1000px) {
+    .top-wrapper h1 {
+      font-size: 32px;
+    }
+  
+    .heading h2 {
+      font-size: 20px;
+    }
+  
+    .lesson {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+  }
+    
+    /* Untuk Smartphone */
+  @media all and (max-width: 670px) {
+    .header-right {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+    .facebook {
+      margin-bottom: 10px;
+    }
+  
+    .top-wrapper {
+      text-align: left;
+    }
+  
+    .top-wrapper h1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  
+    .top-wrapper p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    .lesson {
+      width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  
+    .lesson-wrapper {
+      padding-bottom: 1140px;
+    }
+  }
