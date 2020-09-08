@@ -287,30 +287,30 @@
   margin-right: 0;
   margin-bottom: 0!important;
   }
-  .our-services-website {
+  .harga-buset-fe {
     margin-top: 48px;
   }
-  .our-services-website .card-body {
+  .harga-buset-fe .card-body {
     padding: 24px;
   }
-  .our-services-website__description {
+  .harga-buset-fe__description {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: .05em;
     color: #757a94;
   }
-  .our-services-website__description a {
+  .harga-buset-fe__description a {
     display: inline;
   }
-  .our-services-website__description, .our-services-website__img, .our-services-website__title {
+  .harga-buset-fe__description, .harga-buset-fe__img, .harga-buset-fe__title {
     text-align: left;
   }
-  .our-services-website__img {
+  .harga-buset-fe__img {
     margin-top: 0;
     width: 100%;
     margin-bottom: 0;
   }
-  .our-services-website .col-lg-6 {
+  .harga-buset-fe .col-lg-6 {
     max-width: none;
     padding-left: 15px;
     padding-right: 15px;

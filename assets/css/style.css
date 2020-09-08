@@ -617,22 +617,22 @@ z
   flex: 1 1 auto;
   padding: 1.25rem;
 }
-.our-services-website {
+.harga-buset-fe {
   margin-top: 55px;
   margin-left: 0!important;
   margin-right: 0!important;
   position: relative;
 }
-.our-services-website .card-body {
+.harga-buset-fe .card-body {
   border-radius: 8px;
   padding-bottom: 55px;
 }
-.our-services-website .col-lg-6 {
+.harga-buset-fe .col-lg-6 {
   max-width: 260px;
   padding-left: 0;
   padding-right: 0;
 }
-.our-services-website .card {
+.harga-buset-fe .card {
   background: #fff;
   box-shadow: 0 6px 20px rgba(17,26,104,.2);
   border-radius: 8px;
@@ -650,25 +650,32 @@ z
   transition: 0.45s;
   transform: translateY(-10px);
 }
-.our-services-website__img {
+.harga-buset-fe__img {
   display: block;
   margin: 30px auto;
   width: 92px;
   height: auto;
   transition: 0.45s;
 }
-.our-services-website__img:hover {
+.harga-buset-fe__img:hover {
   filter: saturate(1.3) brightness(1.0);
   transition: 0.45s;
   transform: translateY(-10px);
 }
-.our-services-website__title {
+.harga-buset-fe__title {
   font-size: 18px;
   line-height: 25px;
   color: #3a4166;
   margin-bottom: 16px;
 }
-.our-services-website__description a {
+.harga-buset-fe__description a {
   color: #07aa4d;
   display: block;
+}
+.harga-buset-fe__description {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: .05em;
+  color: #757a94;
+  text-align: center;
 }
