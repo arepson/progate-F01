@@ -263,8 +263,56 @@
   }
 }
 @media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
   .col-lg-4 {
     flex: 0 0 25%;
     max-width: 25%;
+  }
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .harga-buset__card:not(:last-child) {
+    margin-right: 28px;
+  }
+.harga-buset__card {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0!important;
+  }
+  .our-services-website {
+    margin-top: 48px;
+  }
+  .our-services-website .card-body {
+    padding: 24px;
+  }
+  .our-services-website__description {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .05em;
+    color: #757a94;
+  }
+  .our-services-website__description a {
+    display: inline;
+  }
+  .our-services-website__description, .our-services-website__img, .our-services-website__title {
+    text-align: left;
+  }
+  .our-services-website__img {
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .our-services-website .col-lg-6 {
+    max-width: none;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
