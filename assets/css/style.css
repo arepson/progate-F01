@@ -163,7 +163,7 @@ z
   font-weight: 700;
   font-size: 33px;
   line-height: 45px;
-  text-align: center;
+  
   color: #07aa4d;
 }
 
@@ -171,7 +171,7 @@ z
   font-weight: 400;
   font-size: 18px;
   line-height: 200%;
-  text-align: center;
+  
   color: rgba(58, 65, 102, .7);
   margin: 20px 0 80px;
 }
@@ -198,11 +198,11 @@ z
 }
 
 .tim-f01__daftar-anggota-image {
-  text-align: center;
+  
 }
 
 .tim-f01__daftar-anggota-nama {
-  text-align: center;
+  
   color: #07aa4d;
   font-size: 18px;
   font-weight: 700;
@@ -213,7 +213,7 @@ z
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  text-align: center;
+  
   color: rgba(58, 65, 102, .7);
   padding: 0 35px 40px;
 }
@@ -229,7 +229,7 @@ z
   font-weight: 700;
   font-size: 33px;
   line-height: 45px;
-  text-align: center;
+  
   color: #07aa4d;
   margin-top: 35px;
 }
@@ -239,7 +239,7 @@ z
   font-weight: 400;
   font-size: 18px;
   line-height: 200%;
-  text-align: center;
+  
   color: rgba(58, 65, 102, .7);
   margin-top: 50px;
   padding: 0 50px;
@@ -297,7 +297,7 @@ z
   color: #07aa4d;
   width: 48px;
   height: 48px;
-  text-align: center;
+  
   padding-top: 12px;
   top: -24px;
 }
@@ -677,5 +677,7 @@ z
   line-height: 28px;
   letter-spacing: .05em;
   color: #757a94;
+}
+.harga-buset-fe__description, .harga-buset-fe__img, .harga-buset-fe__title {
   text-align: center;
 }
