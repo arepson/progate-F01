@@ -163,15 +163,17 @@ z
   font-weight: 700;
   font-size: 33px;
   line-height: 45px;
-  
   color: #07aa4d;
+}
+
+.tim-f01__title, .tim-f01__description {
+  text-align: center;
 }
 
 .tim-f01__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 200%;
-  
   color: rgba(58, 65, 102, .7);
   margin: 20px 0 80px;
 }
