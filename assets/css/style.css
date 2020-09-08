@@ -116,11 +116,17 @@ svg {
 
 .col-md-7,
 .col-md-5,
-.col-12, .col-lg-9 {
+.col-12,
+.col-lg-9 {
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col-xs-6 {
+  width: 50%;
+  float: left;
 }
 
 .jumbotron-fe__title {
@@ -149,6 +155,7 @@ svg {
   transition: 0.45s;
   transform: translateY(-10px);
 }
+
 z
 /* Akhir Bagian Jumbotron */
 
@@ -376,7 +383,7 @@ z
 }
 
 .block-fe__fitur-point-item-title:hover {
-  font-weight: 400;
+  opacity: 0.6;
   transition: 0.3s;
 }
 
@@ -415,101 +422,258 @@ z
   text-align: left;
 }
 
+.harga-buset {
+  padding: 70px 0 65px;
+  background: #f6fbff;
+}
+
+.harga-buset__title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 33px;
+  color: #07aa4d;
+}
+
+.harga-buset__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.harga-buset__card>a {
+  color: #3a4166;
+}
+
+.harga-buset__card {
+  display: inline-block;
+  max-width: 260px;
+  height: 394px;
+  padding: 55px 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(17, 26, 104, .2);
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: all .4s;
+}
+
+.harga-buset__card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.harga-buset__service-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.harga-buset__service-description {
+  font-size: 14px;
+  color: rgba(58, 65, 102, .7);
+  margin-bottom: 24px;
+}
+
+.harga-buset__service-start-from {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: .7;
+}
+
+.harga-buset__service-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.harga-buset-fe {
+  margin-top: 55px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: relative;
+}
+
+.harga-buset-fe .card-body {
+  border-radius: 8px;
+  padding-bottom: 55px;
+}
+
+.harga-buset-fe .col-lg-6 {
+  max-width: 260px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.harga-buset-fe .card {
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(17, 26, 104, .2);
+  border-radius: 8px;
+  border: 0;
+}
+
+.card:not(last-child) {
+  margin-bottom: 20px !important;
+}
+
+.harga-buset__service-image {
+  margin-bottom: 30px;
+  transition: 0.45s;
+}
+
+.harga-buset__service-image:hover {
+  filter: saturate(1.3) brightness(1.0);
+  transition: 0.45s;
+  transform: translateY(-10px);
+}
+
+.harga-buset-fe__img {
+  display: block;
+  margin: 30px auto;
+  width: 92px;
+  height: auto;
+  transition: 0.45s;
+}
+
+.harga-buset-fe__img:hover {
+  filter: saturate(1.3) brightness(1.0);
+  transition: 0.45s;
+  transform: translateY(-10px);
+}
+
+.harga-buset-fe__title {
+  font-size: 18px;
+  line-height: 25px;
+  color: #3a4166;
+  margin-bottom: 16px;
+}
+
+.harga-buset-fe__description a {
+  color: #07aa4d;
+  display: block;
+}
+
+.harga-buset-fe__description {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: .05em;
+  color: #757a94;
+}
+
+.harga-buset-fe__description,
+.harga-buset-fe__img,
+.harga-buset-fe__title {
+  text-align: center;
+}
+
 /* Akhir Bagian Content */
 
 /* Awal Bagian Footer */
-.footer-container {
-  background-color: #07aa4d;
-  width: 100%;
+footer {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 22px;
+  background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
 }
 
-.footer-content-container {
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  align-items: center;
+.footer-menu {
+  margin-bottom: 50px;
 }
 
-.icon-container {
-  padding: 5px;
-}
-
-.icon-container svg {
-  height: 40px;
-  margin: 0 5px;
-  padding: 5px;
-  width: 40px;
-  transition: 0.3s;
-}
-
-.icon-container svg:hover {
-  cursor: pointer;
-  filter: grayscale(90%) brightness(1.3);
-  transition: 0.3s;
-  border-radius: 20px;
-}
-
-.information-container {
-  display: flex;
-  transition: 0.3s;
-  flex-direction: row;
-}
-
-.information-container h3:hover {
-  transition: 0.3s;
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.information-container span {
+.footer-menu h4 {
+  font-size: 19px;
+  font-weight: 700;
   color: #fff;
-  font-size: 12.5px;
-  margin: 0 5px;
+  margin-bottom: 40px;
 }
 
-.policy-container {
-  display: flex;
-  flex-direction: row;
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.terms {
-  transition: 0.3s;
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.terms:hover {
-  cursor: pointer;
-  transition: 0.3s;
-  opacity: 0.5;
-}
-
-.policy-container span {
-  font-size: 12.5px;
+.footer-menu ul li {
+  font-size: 16px;
   color: #fff;
+  margin-bottom: 20px;
 }
 
-.policy {
-  transition: 0.3s;
+.footer-menu ul li a {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.policy:hover {
-  cursor: pointer;
-  transition: 0.3s;
-  opacity: 0.6;
+.footer-menu ul.social li {
+  display: inline-block;
+  margin-right: 28px;
 }
 
-.policy-container span {
-  margin: 0 5px;
+.footer-menu ul li a:hover,
+.footer-menu ul li a:focus {
+  opacity: 0.4;
 }
 
-.copyright-container {
-  opacity: 0.7;
+.footer-menu ul li a {
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.footer-content-container h3 {
-  font-size: 13.5px;
-  font-weight: 400;
+.footer-menu ul.social li a i {
+  font-size: 22px;
+}
+
+.sub-footer {
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sub-footer .sub-footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sub-footer .sub-footer-menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.sub-footer .sub-footer-menu ul li a {
+  font-size: 14px;
   color: #fff;
 }
+
+.sub-footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer__social-icon--twitter {
+  background: #55acee;
+}
+
 /* Akhir Bagian Footer */
 
 /* Lain-lain (Button dan Image) */
@@ -537,7 +701,7 @@ z
 
 .fe-btn--white:hover {
   color: #fff;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border: 2px solid #fff;
 }
 
@@ -557,127 +721,11 @@ z
 .img-thumbnail {
   max-width: 100%;
   height: auto;
-  border-radius: 25%;
-}
-.harga-buset {
-  padding: 70px 0 65px;
-  background: #f6fbff;
-}
-.harga-buset__title {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 33px;
-  color: #07aa4d;
-}
-.harga-buset__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.harga-buset__card>a {
-  color: #3a4166;
-}
-.harga-buset__card {
-  display: inline-block;
-  max-width: 260px;
-  height: 394px;
-  padding: 55px 24px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 6px 20px rgba(17,26,104,.2);
-  text-align: center;
-  margin-left: 15px;
-  margin-right: 15px;
-  transition: all .4s;
-}
-.harga-buset__card:not(:last-child) {
-  margin-bottom: 30px;
-}
-.harga-buset__service-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
-.harga-buset__service-description {
-  font-size: 14px;
-  color: rgba(58,65,102,.7);
-  margin-bottom: 24px;
-}
-.harga-buset__service-start-from {
-  font-size: 14px;
-  font-weight: 700;
-  opacity: .7;
-}
-.harga-buset__service-price {
-  font-size: 24px;
-  font-weight: 700;
-}
-.card-body {
-  flex: 1 1 auto;
-  padding: 1.25rem;
-}
-.harga-buset-fe {
-  margin-top: 55px;
-  margin-left: 0!important;
-  margin-right: 0!important;
-  position: relative;
-}
-.harga-buset-fe .card-body {
-  border-radius: 8px;
-  padding-bottom: 55px;
-}
-.harga-buset-fe .col-lg-6 {
-  max-width: 260px;
-  padding-left: 0;
-  padding-right: 0;
-}
-.harga-buset-fe .card {
-  background: #fff;
-  box-shadow: 0 6px 20px rgba(17,26,104,.2);
-  border-radius: 8px;
-  border: 0;
-}
-.card:not(last-child) {
-  margin-bottom: 20px!important;
-}
-.harga-buset__service-image {
-  margin-bottom: 30px;
+  border-radius: 25px;
   transition: 0.45s;
 }
-.harga-buset__service-image:hover {
-  filter: saturate(1.3) brightness(1.0);
+
+.img-fluid:hover {
   transition: 0.45s;
   transform: translateY(-10px);
-}
-.harga-buset-fe__img {
-  display: block;
-  margin: 30px auto;
-  width: 92px;
-  height: auto;
-  transition: 0.45s;
-}
-.harga-buset-fe__img:hover {
-  filter: saturate(1.3) brightness(1.0);
-  transition: 0.45s;
-  transform: translateY(-10px);
-}
-.harga-buset-fe__title {
-  font-size: 18px;
-  line-height: 25px;
-  color: #3a4166;
-  margin-bottom: 16px;
-}
-.harga-buset-fe__description a {
-  color: #07aa4d;
-  display: block;
-}
-.harga-buset-fe__description {
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: .05em;
-  color: #757a94;
-}
-.harga-buset-fe__description, .harga-buset-fe__img, .harga-buset-fe__title {
-  text-align: center;
 }
