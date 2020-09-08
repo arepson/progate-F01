@@ -138,13 +138,14 @@ svg {
 }
 
 .jumbotron-fe__image {
+  filter: saturate(8) brightness(1.0);
   max-width: 85%;
   margin-left: 100px;
 }
 
 .jumbotron-fe__image:hover {
-  filter: saturate(8) brightness(1.0);
-  transition: 0.3s;
+  filter: saturate(.8) brightness(1.0);
+  transition: 0.45s;
 }
 z
 /* Akhir Bagian Jumbotron */
