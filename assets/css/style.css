@@ -138,14 +138,16 @@ svg {
 }
 
 .jumbotron-fe__image {
-  filter: saturate(8) brightness(1.0);
+  filter: saturate(5) brightness(1.0);
   max-width: 85%;
   margin-left: 100px;
+  transition: 0.45s;
 }
 
 .jumbotron-fe__image:hover {
   filter: saturate(.8) brightness(1.0);
   transition: 0.45s;
+  transform: translateY(-10px);
 }
 z
 /* Akhir Bagian Jumbotron */
@@ -342,6 +344,27 @@ z
   margin-bottom: 100px;
 }
 
+.block-fe__fitur-point-item img {
+  width: 50px;
+}
+
+.block-fe__fitur-point .block-fe__fitur-point-item .icon {
+  display: inline-block;
+  background-color: #ecf0f6;
+  width: 94px;
+  height: 94px;
+  border-radius: 100px;
+  padding-top: 20px;
+  transition: 0.3s;
+}
+
+.block-fe__fitur-point .block-fe__fitur-point-item .icon:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, .4);
+  border: 2px solid #21bd67;
+}
+
 .block-fe__fitur-point-item-title {
   font-style: normal;
   font-weight: 700;
@@ -349,6 +372,12 @@ z
   line-height: 32px;
   color: #07aa4d;
   margin-top: 20px;
+  transition: 0.3s;
+}
+
+.block-fe__fitur-point-item-title:hover {
+  font-weight: 400;
+  transition: 0.3s;
 }
 
 .block-fe__fitur-point-item-description {
@@ -358,7 +387,7 @@ z
   line-height: 177.32%;
   text-align: center;
   color: rgba(58, 65, 102, .7);
-  margin-top: 20px;
+  margin-top: 8px;
   padding: 0 55px;
 }
 
