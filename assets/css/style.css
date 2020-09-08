@@ -385,9 +385,44 @@ z
   text-align: left;
 }
 
+<<<<<<< HEAD
 /* Akhir Bagian Content */
 
 /* Awal Bagian Footer */
+=======
+.main {
+	padding: 100px 80px;
+}
+
+.copy-container h1 {
+	opacity: 0.7;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.content {
+	height: 200px;
+  margin-top: 100px;
+}
+
+.section-title {
+	border-bottom: 2px solid #dee7ec;
+	font-size: 28px;
+	padding-bottom: 15px;
+	margin-bottom: 50px;
+}
+
+.content-item {
+	float: left;
+	margin-right: 40px;
+}
+
+.content-item p {
+	font-size: 15px;
+  margin-top: 30px;
+}
+
+>>>>>>> 21cfa071054475b5f80d67212ea63f9f7a1c0e7d
 .footer-container {
   background-color: #07aa4d;
   width: 100%;
