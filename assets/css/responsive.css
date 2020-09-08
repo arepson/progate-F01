@@ -1,19 +1,66 @@
+@media (max-width: 540px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navbar .container {
+    max-width: 540px;
+  }
+}
+
 @media (max-width: 768px) {
     .navbar,
       .navbar .container {
       display: block;
     }
-  }
-  
-  @media (min-width: 576px) {
-    .navbar .container {
-      max-width: 540px;
+    .navbar .navbar-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
     }
   }
   
   @media (min-width: 768px) {
     .navbar .container {
       max-width: 720px;
+    }
+    .hero {
+      padding-top: 150px;
+    }
+    .garansi__logo-wrapper {
+      position: relative;
+    }
+    .col-md-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .garansi__logo-wrapper>img {
+      position: absolute;
+      bottom: -15px;
+      right: 24%;
+    }
+    .garansi__logo-wrapper>img:hover {
+      filter: grayscale(70%) brightness(1.0);
+      transition: 0.3s;
+    }
+    .garansi__text-wrapper {
+      margin-top: 0;
+      padding-left: 0;
+      text-align: left;
+    }
+    .col-md-4 {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+    }
+    .col-md-5 {
+      flex: 0 0 41.66667%;
+      max-width: 41.66667%;
+    }
+    .col-md-7 {
+      flex: 0 0 58.33333%;
+      max-width: 58.33333%;
     }
   }
   
@@ -32,16 +79,6 @@
   .navbar .navbar-header {
     display: flex;
     align-items: center;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar .navbar-header {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-    }
   }
   
   .navbar .navbar-header .navbar-toggler {
@@ -175,125 +212,59 @@
       font-size: 1.05rem;
     }
   }
-  /* Untuk Tablet */
-  @media all and (max-width: 1000px) {
-    .top-wrapper h1 {
-      font-size: 32px;
-    }
-  
-    .heading h2 {
-      font-size: 20px;
-    }
-  
-    .lesson {
-      width: 50%;
-      margin-bottom: 50px;
-    }
-  }
-    
-    /* Untuk Smartphone */
-  @media all and (max-width: 670px) {
-    .header-right {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    .btn {
-      width: 100%;
-    }
-  
-    .facebook {
-      margin-bottom: 10px;
-    }
-  
-    .top-wrapper {
-      text-align: left;
-    }
-  
-    .top-wrapper h1 {
-      font-size: 24px;
-      line-height: 36px;
-    }
-  
-    .top-wrapper p {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  
-    .lesson {
-      width: 100%;
-    }
-  
-    footer {
-      text-align: center;
-    }
-  
-    .lesson-wrapper {
-      padding-bottom: 1140px;
-    }
-  }
   @media (max-width: 767px) {
-    .block-website__step {
-    margin-top: 40px;
-    padding: 40px 0;
+    .block-fe__step {
+    padding: 10px 0;
   }
-}
-@media (max-width: 767px) {
-  .block-website__step-description {
+  .block-fe__step-description {
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+  .block-fe__step-flow {
+    margin-top: 50px;
+  }
+  .block-fe__fitur-description {
     padding: 0 10px;
     margin-top: 30px;
   }
 }
-@media (max-width: 767px) {
-  .block-website__step-flow {
-    margin-top: 50px;
-  }
-}
 @media (max-width: 991px) {
-  .block-website__step-flow-box {
+  .block-fe__step-flow-box {
     flex-direction: column;
     padding: 0 10px;
   }
-}
-@media (max-width: 991px) {
-  .block-website__step-flow-box-left {
+  .block-fe__step-flow-box-left {
     width: unset;
+  }
+  .block-fe__fitur-point-item-description {
+    padding: 0 10px;
   }
 }
 @media (max-width: 767px) {
-  .block-website__step-flow-box-right {
+  .block-fe__step-flow-box-right {
     padding-top: unset;
   }
 }
-@media (min-width: 768px) {
-  .hero {
-    padding-top: 150px;
-  }
-}
-@media (min-width: 768px) {
-  .col-md-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%;
-  }
-}
-
-@media (min-width: 768px) {
-  .col-md-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%;
-  }
-}
 @media (max-width: 576px) {
-  .membuat-website-hero__title {
+  .jumbotron-fe__title {
     font-size: 30px;
     line-height: 42px;
   }
-  .membuat-website-hero__description {
+  .jumbotron-fe__description {
     font-size: 16px;
     line-height: 177.32%;
     letter-spacing: .05em;
+  }
+}
+@media (max-width: 768px) {
+  .jumbotron-fe__image {
+    margin-left: 12px;
+    margin-top: 76px;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }

@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 0.925rem;
@@ -16,15 +22,20 @@ a {
   text-decoration: none;
 }
 
-.container {
-  max-width: 1170px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+img,
+svg {
+  vertical-align: middle;
 }
 
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Mulai Bagian Navbar */
 .navbar {
   padding: 1.15rem 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.035);
@@ -34,7 +45,8 @@ a {
   z-index: 10;
 }
 
-.navbar, .navbar .container {
+.navbar,
+.navbar .container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +63,7 @@ a {
   transition: 0.3s;
 }
 
-.navbar .navbar-menu .navbar-nav > li.active a {
+.navbar .navbar-menu .navbar-nav>li.active a {
   color: #00ab4e;
 }
 
@@ -76,119 +88,308 @@ a {
   transition: 0.3s;
 }
 
-.top-wrapper {
-  padding: 250px 0 100px 0;
-  background-image: url(/assets/img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
-  background-size: cover;
-  color: white;
-  text-align: center;
+/* Akhir Bagian Navbar */
+
+/* Awal Bagian Jumbotron */
+
+.jumbotron-fe {
+  background-image: linear-gradient(45deg, #21bd67, rgba(41, 226, 140, 0.922), #44db88);
+  color: #fff;
+  padding-top: 192px;
+  padding-bottom: 93.39px;
 }
 
-.top-wrapper h1 {
-  opacity: 0.95;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+.hero {
+  padding: 100px 0;
 }
 
-.top-wrapper p {
-  opacity: 0.9;
-  margin-bottom: 3px;
+.align-items-center {
+  align-items: center !important;
 }
 
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.9;
-  border-radius: 4px;
-  text-align: center;
-  border-radius: 30px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-.contact {
-  background-color: #239b76;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.lesson-wrapper {
-  padding-bottom: 330px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
-}
-
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
-}
-
-.heading h2 {
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.lesson {
-  float: left;
-  width: 25%;
-}
-
-.lesson-icon {
+.col-md-7,
+.col-md-5,
+.col-12 {
   position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.lesson-icon h3 {
+.jumbotron-fe__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 68px;
+}
+
+.jumbotron-fe__description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: .05em;
+  margin: 29.84px 0;
+}
+
+.jumbotron-fe__image {
+  max-width: 85%;
+  margin-left: 100px;
+}
+
+.jumbotron-fe__image:hover {
+  filter: saturate(8) brightness(1.0);
+  transition: 0.3s;
+}
+z
+/* Akhir Bagian Jumbotron */
+
+/* Awal Bagian Content */
+
+.tim-f01 {
+  padding: 100px 0;
+}
+
+.tim-f01__title {
+  margin-top: 45px;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 45px;
+  text-align: center;
+  color: #07aa4d;
+}
+
+.tim-f01__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  text-align: center;
+  color: rgba(58, 65, 102, .7);
+  margin: 20px 0 80px;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.tim-f01__daftar-anggota--mb-30 {
+  margin-bottom: 30px;
+}
+
+.tim-f01__daftar-anggota {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 20px;
+  min-height: 360px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.tim-f01__daftar-anggota-image--posisi {
+  padding: 90px 40px 70px;
+}
+
+.tim-f01__daftar-anggota-image {
+  text-align: center;
+}
+
+.tim-f01__daftar-anggota-nama {
+  text-align: center;
+  color: #07aa4d;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.tim-f01__daftar-anggota-tugas {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: rgba(58, 65, 102, .7);
+  padding: 0 35px 40px;
+}
+
+.block-fe__step {
+  padding: 100px 0 75px;
+  background: #f6fbff;
+}
+
+.block-fe__step-title {
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 45px;
+  text-align: center;
+  color: #07aa4d;
+  margin-top: 35px;
+}
+
+.block-fe__step-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  text-align: center;
+  color: rgba(58, 65, 102, .7);
+  margin-top: 50px;
+  padding: 0 50px;
+}
+
+.block-fe__step-flow {
+  margin-top: 80px;
+}
+
+.block-fe__step-flow-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-fe__step-flow-box-left {
+  width: 50%;
+}
+
+.block-fe__step-flow-box-left-item {
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(17, 26, 104, .15);
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.block-fe__step-flow-box-left-item-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #07aa4d;
+  padding-left: 77px;
+}
+
+.block-fe__step-flow-box-left-item-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 177.32%;
+  color: rgba(58, 65, 102, .7);
   margin-top: 10px;
+}
+
+.block-fe__step-flow-box-left-item-number {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(17, 26, 104, .15);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #07aa4d;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  padding-top: 12px;
+  top: -24px;
+}
+
+.block-fe__step-flow-box-right img {
   width: 100%;
 }
 
-.txt-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 15px;
-  color: #b3aeb5;
+.block-fe__step-flow-box-right img:hover {
+  filter: grayscale(70%) brightness(1.0);
+  transition: 0.3s;
 }
 
-.heading h3 {
-  font-weight: normal;
+.block-fe__fitur {
+  padding: 50px 0 20px;
 }
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
+.block-fe__fitur-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 45px;
+  color: #07aa4d;
   text-align: center;
 }
 
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+.block-fe__fitur-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 200%;
+  text-align: center;
+  color: rgba(58, 65, 102, .7);
+  margin-top: 60px;
+  padding: 0 120px;
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.block-fe__fitur-point {
+  margin-top: 100px;
 }
 
+.block-fe__fitur-point-item {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.block-fe__fitur-point-item-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #07aa4d;
+  margin-top: 20px;
+}
+
+.block-fe__fitur-point-item-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 177.32%;
+  text-align: center;
+  color: rgba(58, 65, 102, .7);
+  margin-top: 20px;
+  padding: 0 55px;
+}
+
+.garansi {
+  padding: 50px 0;
+}
+
+.garansi__logo-wrapper {
+  text-align: center;
+}
+
+.garansi__title {
+  font-weight: 700;
+  font-size: 33px;
+  color: #07aa4d;
+  text-align: left;
+}
+
+.garansi__description {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: .7;
+  line-height: 2em;
+  margin: 30px 0 40px;
+  text-align: left;
+}
+
+/* Akhir Bagian Content */
+
+/* Awal Bagian Footer */
 .footer-container {
-  background-color: #00ab4e;
+  background-color: #07aa4d;
   width: 100%;
 }
 
@@ -275,122 +476,14 @@ a {
 }
 
 .footer-content-container h3 {
-  font-size: 12.5px;
+  font-size: 13.5px;
   font-weight: 400;
   color: #fff;
 }
-.block-website__step-title {
-  text-transform: capitalize;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 33px;
-  line-height: 45px;
-  text-align: center;
-  color: #3a4166;
-  margin-top: 35px;
-}
-.block-website__step-description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 200%;
-  text-align: center;
-  color: rgba(58,65,102,.7);
-  margin-top: 50px;
-  padding: 0 50px;
-  font-family: NunitoSansLight,sans-serif;
-}
-.block-website__step-flow {
-  margin-top: 80px;
-}
-.block-website__step-flow-box {
-  display: flex;
-  justify-content: space-between;
-}
-.block-website__step-flow-box-left {
-  width: 50%;
-}
-.block-website__step-flow-box-left-item {
-  width: 100%;
-  box-shadow: 0 6px 20px rgba(17,26,104,.15);
-  background: #fff;
-  border-radius: 8px;
-  padding: 16px 24px;
-  position: relative;
-  margin-bottom: 65px;
-}
-.block-website__step-flow-box-left-item-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 32px;
-  color: #3a4166;
-  padding-left: 77px;
-}
-.block-website__step-flow-box-left-item-description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 177.32%;
-  color: rgba(58,65,102,.7);
-  margin-top: 10px;
-  font-family: NunitoSansLight,sans-serif;
-}
-.block-website__step-flow-box-left-item-number {
-  position: absolute;
-  background: #fff;
-  box-shadow: 0 3px 10px rgba(17,26,104,.15);
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: #3a4166;
-  width: 48px;
-  height: 48px;
-  text-align: center;
-  padding-top: 12px;
-  top: -24px;
-}
-.block-website__step-flow-box-right img {
-  width: 100%;
-}
-.membuat-website-hero {
-  background-color: #21bd67;
-  color: #fff;
-  padding-top: 192px;
-  padding-bottom: 93.39px;
-}
-.hero {
-  padding: 150px 0;
-}
-.align-items-center {
-  align-items: center!important;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-.col-md-7, .col-md-5  {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.membuat-website-hero__title {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 68px;
-}
-.membuat-website-hero__description {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 35px;
-  letter-spacing: .05em;
-  margin: 29.84px 0;
-}
-.nh-btn {
+/* Akhir Bagian Footer */
+
+/* Lain-lain (Button dan Image) */
+.fe-btn {
   display: inline-block;
   padding: 12px 35px;
   border-radius: 5px;
@@ -400,12 +493,39 @@ a {
   text-align: center;
   border-radius: 30px;
 }
-.nh-btn, .nh-btn:hover {
-  color: #3a4166;
-  transition: all 1s;
+
+.fe-btn,
+.fe-btn:hover {
+  transition: all 0.45s;
 }
-.nh-btn--white {
+
+.fe-btn--white {
   color: #21bd67;
   background: #fff;
   border: none;
+}
+
+.fe-btn--white:hover {
+  color: #fff;
+  background-color: rgba(0,0,0,0.1);
+  border: 2px solid #fff;
+}
+
+.fe-btn--green {
+  color: #fff;
+  background: #21bd67;
+  border: none;
+}
+
+.fe-btn--green:hover {
+  color: #21bd67;
+  background-color: #fff;
+  border: 2px solid #21bd67;
+}
+
+.img-fluid,
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25%;
 }
