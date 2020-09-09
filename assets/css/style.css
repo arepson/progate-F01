@@ -311,6 +311,7 @@ z
 
 .block-fe__step-flow-box-right img {
   width: 100%;
+  transition: 0.3s;
 }
 
 .block-fe__step-flow-box-right img:hover {
@@ -570,6 +571,105 @@ z
   text-align: center;
 }
 
+.support-fe {
+  background-color: #eaf2fe;
+}
+
+.support-fe>.row .buset-holder:first-child {
+  background-color: #eaf2fe;
+  text-align: right;
+  padding-right: 80px;
+  padding-left: 40px;
+}
+
+.support-fe>.row .buset-holder {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.fe-box {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  max-width: 490px;
+  padding: 15px 15px 15px 135px;
+}
+
+.fe-box .icon {
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 106px;
+  height: 106px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  text-align: center;
+  -webkit-box-shadow: 0 8px 12px rgba(31, 27, 90, 0.08);
+  box-shadow: 0 8px 12px rgba(31, 27, 90, 0.08);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.fe-box .icon:hover {
+  opacity: 0.6;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transform: translateY(-10px);
+}
+
+.fe-box .icon img {
+  width: 57px;
+}
+
+.fe-box .link {
+  font-size: 19px;
+  font-weight: 700;
+  color: #00ab4e;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  margin-bottom: 6px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.fe-box .link:hover {
+  opacity: 0.6;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.fe-box .text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #62647b;
+  line-height: 21px;
+}
+
+.support-fe>.row .buset-holder:first-child {
+  background-color: #eaf2fe;
+  text-align: right;
+  padding-right: 80px;
+  padding-left: 40px;
+}
+
+.support-fe>.row .buset-holder {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.support-fe>.row .buset-holder:last-child {
+  background-color: #f4f8fe;
+  text-align: left;
+  padding-left: 80px;
+  padding-left: 40px;
+}
+
 /* Akhir Bagian Content */
 
 /* Awal Bagian Footer */
@@ -690,7 +790,7 @@ footer {
 
 .fe-btn,
 .fe-btn:hover {
-  transition: all 0.45s;
+  transition: all 0.5s;
 }
 
 .fe-btn--white {
