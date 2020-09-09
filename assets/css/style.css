@@ -144,14 +144,12 @@ svg {
 }
 
 .jumbotron-fe__image {
-  filter: saturate(4) brightness(1.0);
   max-width: 85%;
   margin-left: 100px;
   transition: 0.45s;
 }
 
 .jumbotron-fe__image:hover {
-  filter: saturate(.8) brightness(1.0);
   transition: 0.45s;
   transform: translateY(-10px);
 }
@@ -309,6 +307,13 @@ z
   top: -24px;
 }
 
+.block-fe__step-flow-box-left-item-number:hover {
+  cursor: pointer;
+  transform: scaleY(1.025);
+  box-shadow: 0 6px 30px rgba(17,26,104,.4);
+  transition: all .4s;
+}
+
 .block-fe__step-flow-box-right img {
   width: 100%;
   transition: 0.3s;
@@ -367,8 +372,10 @@ z
 }
 
 .block-fe__fitur-point .block-fe__fitur-point-item .icon:hover {
-  transform: translateY(-10px);
-  transition: 0.3s;
+  cursor: pointer;
+  transform: scaleY(1.025);
+  box-shadow: 0 6px 30px rgba(17,26,104,.4);
+  transition: all .4s;
   background-color: rgba(255, 255, 255, .4);
   border: 2px solid #21bd67;
 }
@@ -460,6 +467,13 @@ z
   transition: all .4s;
 }
 
+.harga-buset__card:hover {
+  cursor: pointer;
+  transform: scaleY(1.025);
+  box-shadow: 0 6px 30px rgba(17,26,104,.4);
+  transition: all .4s;
+}
+
 .harga-buset__card:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -497,6 +511,13 @@ z
   margin-left: 0 !important;
   margin-right: 0 !important;
   position: relative;
+}
+
+.harga-buset-fe__link:hover {
+  cursor: pointer;
+  transform: scaleY(1.025);
+  box-shadow: 0 6px 30px rgba(17,26,104,.4);
+  transition: all .4s;
 }
 
 .harga-buset-fe .card-body {
@@ -612,14 +633,14 @@ z
   -webkit-box-shadow: 0 8px 12px rgba(31, 27, 90, 0.08);
   box-shadow: 0 8px 12px rgba(31, 27, 90, 0.08);
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  transition: all .4s;
 }
 
 .fe-box .icon:hover {
-  opacity: 0.6;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  transform: translateY(-10px);
+  cursor: pointer;
+  transform: scaleY(1.025);
+  box-shadow: 0 6px 30px rgba(17,26,104,.4);
+  transition: all .4s;
 }
 
 .fe-box .icon img {
@@ -768,10 +789,6 @@ footer {
   text-align: center;
   font-size: 14px;
   color: #fff;
-}
-
-.footer__social-icon--twitter {
-  background: #55acee;
 }
 
 /* Akhir Bagian Footer */
